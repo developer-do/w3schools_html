@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>HTML Style - CSS</h1>
+  <h2>CSS로 HTML 스타일 지정하기</h2>
+  <p>CSS중 C의 의미는 Cascading S의 의미는 Style 마지막 S의 의미는 Sheets</p>
+  <p>즉 Cascading Style sheets</p>
+  <p>CSS는 HTML 요소가 화면, 종이 또는 다른 미디어에 표시되는 방법을 설명합니다.</p>
+  <p>CSS는 많은 작업을 저장합니다. 한번에 여러 웹페이지의 레이아웃을 제어할 수 있습니다.</p>
+  <p>CSS는 다음 세가지 방법으로 HTML 요소에 추가 할 수 있습니다.</p>
+
+  <p><strong>Inline(인라인)</strong> - HTML 요소의 style 속성 사용</p>
+  <p><strong>Internal</strong> - < head > 내부에 < style /> 요소를 사용하여 정의하는 방법 </p>
+  <p><strong>External</strong> - 외부의 CSS 파일을 사용</p>
+  <p>CSS를 추가하는 가장 일반적인 방법은 별도의 CSS파일에 스타일을 유지하는 것입니다.</p>
+  <p>그러나 여기에서는 인라인 및 내부 스타일링을 사용합니다. 이는 시연하기 쉽고 직접시도하기가 쉽기 때문입니다.</p>
+  <p>Tip: CSS에 대한 자세한 내용은 CSS 자습서를 참조</p>
+
+  <hr>
+
+  <h2>인라인 CSS</h2>
+  <p>인라인 CSS는 단일 HTML 요소에 고유한스타일을 적용하는 데 사용됩니다.</p>
+  <p>인라인 CSS는 HTML요소의 style속성을 사용합니다.</p>
+  <p>아래 예제에서는 < h1 > 요소의 텍스트 색을 파란색으로 설정합니다.</p>
+  <hr>
+  <p>ex)</p>
+  <h1 style="color:blue;">This is a Blue Heading</h1>
+  <hr>
+
+  <h2>내부 CSS</h2>
+  <p>내부 CSS는 단일 HTML 페이지의 스타일을 정의하는데 사용됩니다.</p>
+  <p>내부 CSS는 요소 < head > 안 < style />에 정의됩니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>설명으로 대체하겟음 head 태그 안에 style 태그를 생성하여</p>
+  <p>이 페이지의 HTML의 스타일시트를 바꾸고 싶을때. 내부 CSS를 사용한다.</p>
+  <hr>
+
+  <h2>외부 CSS</h2>
+  <p>외부 스타일 시트는 많은 HTML 페이지의 스타일을 정의하는데 사용됩니다.</p>
+  <p>외부 스타일 시트를 사용하면 하나의 파일을 변경하여 전체 웹사이트의 모양을변경할 수 있습니다.</p>
+  <p>외부 스타일 시트를 사용하려면 head 안에 link를 추가해야 한다.</p>
+  <hr>
+  <p> head 안에 이렇게 정의한다. < link rel="stylesheet" href="styles.css" ></p>
+  <hr>
+
+  <h2>CSS 글꼴</h2>
+  <p>CSS color 속성은 사용할 텍스트 색상을 정의합니다.</p>
+  <p>CSS font-family 속성은 사용할 글꼴을 정의합니다.</p>
+  <p>CSS font-size 속성은 사용할 텍스트 크기를 정의합니다.</p>
+
+  <hr>
+  <p>ex)</p>
+  <pre>
+    h1 {
+      color: blue;
+      font-family: verdana;
+      font-size: 300%;
+    }
+    p {
+      color: red;
+      font-family: courier;
+      font-size: 160%;
+    }
+  </pre>
+  <hr>
+
+  <h2>CSS Border</h2>
+  <p>CSS border 속성은 HTML 요소 주위에 테두리를 정의합니다.</p>
+  <hr>
+  <pre>
+    ex) p {
+      border: 1px solid powderblue;
+    }
+  </pre>
+  <hr>
+
+  <h2>CSS Padding</h2>
+  <p>CSS padding 속성은 텍스트와 border 사이의 여백 (공백)을 정의합니다.</p>
+  <hr>
+  <pre>
+    p {
+      border: 1px solid powderblue;
+      padding: 30px;
+    }
+  </pre>
+  <hr>
+
+  <h2>CSS Margin</h2>
+  <p>CSS Margin 속성은 border 밖에 (공백)을 정의합니다.</p>
+  <hr>
+  <pre>
+    p {
+      border: 1px solid powderblue;
+      margin: 50px; 
+    }
+  </pre>
+  <hr>
+
+  <h2>id 속성</h2>
+  <p>특정 특수 요소에 대한 특정 스타일을 정의하려면 id 특성을 추가하십시요</p>
+  <hr>
+  <pre>
+    < p id="p01">I am different< /p >
+    #p01 {
+      color: blue;
+    }
+  </pre>
+  <hr>
+
+  <h2>class 속성</h2>
+  <p>(다중가능) 특수 유형의 요소에 대한 스타일을 정의하려면 요소에 class 속성을 추가하십시오</p>
+  <hr>
+  <pre>
+    < p class="error"> I am different < /p >
+    p.error {
+      color: red;
+    }
+  </pre>
+  <hr>
+
+  <h2>외부 참조</h2>
+  <p>외부 스타일 시트는 전체 URL 또는 현재 웹 페이지와 관련된 경로로 참조 할 수 있습니다.</p>
+  
+  <hr>
+  <p>이 예제에서는 전체 URL을 사용하여 스타일 시트에 연결합니다.</p>
+  <pre>
+    < link rel="stylesheet" href="https://www.w3schools.com/html/styles.css" >
+  </pre>
+  <hr>
+  <p>이 예제는 현재 웹 사이트의 html 폴더에 있는 스타일 시트에 연결됩니다.</p>
+  <pre>
+    < link rel="stylesheet" href="/html/styles.css" >
+  </pre>
+  <hr>
+  <p>이 예제는 현재 페이지와 같은 폴더에 있는 스타일 시트에 연결됩니다.</p>
+  <pre>
+    < link rel="stylesheet" href="styles.css" >
+  </pre>
+  <hr>
+  <p><a href="https://www.w3schools.com/html/html_filepaths.asp">Tip: HTML 파일 경로 장에서 파일 경로에 대한 자세한 내용을 볼 수 있습니다.</a></p>
+</body>
+</html>
