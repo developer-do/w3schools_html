@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>HTML links</h1>
+  <hr>
+  <p>링크는 거의 모든 웹 페이지에서 찾을 수 있습니다. 링크를 통해 사용자는 페이지에서 페이지로 이동할 수 있습니다.</p>
+  <hr>
+  <h2>HTML 링크 - 하이퍼 링크</h2>
+  <p>HTML 링크는 하이퍼 링크입니다.</p>
+  <p>링크 위에서 마우스를 움직이면 마우스 화살표가 조금 움직입니다.</p>
+  <p>Tip: 링크는 텍스트 일 필요는 없습니다. 이미지 또는 다른 HTML 요소가 될 수 있습니다.</p>
+  <hr>
+  
+  <h2>HTML 링크 - 구문</h2>
+  <p>HTML에서 링크는 다음 < a >태그로 정의됩니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>< a href="url" >link text< /a ></p>
+  <p>< a href="https://www.w3schools.com/html/">Visit our HTML tutorial< /a >은 아래와 같다.</p>
+  <p><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a></p>
+  <p>이 href 속성은 링크의 대상 주소 https://www.w3schools.com/html/를 가리킨다.</p>
+  <p>링크 텍스트가 보이는 부분 (현재 HTML tutorial을 가리킴)입니다.</p>
+  <p>링크 텍스트를 클릭하면 지정된 주소로 이동합니다.</p>
+  <p>
+    Tip: 하위 폴더 주소 끝에 슬래시가 없으면 서버에 두개의 요청을 생성 할 수 있습니다. 많은 서버가 자동으로 슬래시를 주소 끝에 추가 한 다음 새 요청을 만듭니다.
+  </p>
+  <pre>
+    위의 Tip에 대한 부연 설명
+    1. 고객 요청 #1 : http://example.com/myfolder 를 요청하고 있습니다.
+    2. 서버 응답 #1 : 난 당신이 가고싶은 이 http://example.com/myfolder/, HTTP 302 Found 이것은 임시 리디렉션 입니다.
+    3. 고객 요청 #2 : 아, 알았어! 나는 너에게 http://example.com/myfolder/ 를 요청하고 있다.
+    4. 서버 응답 #2 : 물론 여기 있씁니다. HTTP 200 OK - 여기에 귀하의 콘텐츠가 있습니다.
+  </pre>
+  <hr>
+
+  <h2>지역 링크</h2>
+  <p>위의 예에서는 절대 URL ( 전체 웹 주소 )을 사용했습니다.</p>
+  <p>로컬 링크 ( 동일한 웹 사이트에 대한 링크 )는 상대 URL(https://www...없이)으로 지정됩니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>< a href="html_images.asp">HTML Images< /a >은 아래와 같다. </p>
+  <p><a href="html_images.asp">HTML Images</a></p>
+  <hr>
+
+  <h2>HTML 링크 색상</h2>
+  <p>기본적으로 링크는 다음과 같이 표시됩니다. (모든 브라우저에서)</p>
+  <ul>
+    <li>방문하지 않은 링크에는 밑줄이 그어져 파란색으로 표시됩니다.(:link)</li>
+    <li>방문한 링크에는 밑줄이 그어지고 자주색입니다.(:visited)</li>
+    <li>활성 링크에는 밑줄이 그어지고 빨간색으로 표시됩니다.(:active)</li>
+  </ul>
+  <p>CSS를 사용하여 기본 색상을 변경할 수 있습니다.</p>
+  <hr>
+  <p>ex)</p>
+  <pre>
+    < style />
+      a:link {
+        color: green;
+        background: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    < /style >
+  </pre>
+  <hr>
+
+  <h2>HTML 링크 - 대상 속성</h2>  
+  <p>target 속성은 링크된 문서를 열 위치를 지정합니다.</p>
+  <p>대상 속성은 다음 값 중 하나를 가질 수 있습니다.</p>
+  <ul>
+    <li>_blank - 새 창이나 탭에서 링크된 문서를 엽니다.</li>
+    <li>_self - 클릭 한 것과 동일한 창 / 탭에서 링크 된 문서를 엽니다.(기본값)</li>
+    <li>_parent - 링크 된 문서를 부모 프레임에 엽니다.</li>
+    <li>_top - 창 전체에서 링크 된 문서를 엽니다.</li>
+    <li>framename - 명명된 프레임에 링크된 문서를 엽니다.</li>
+  </ul>
+  <hr>
+  <p>이 예제는 새 브라우저 창 / 탭에서 링크된 문서를 엽니다.</p>
+  <p>ex)</p>
+  <p>< a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!< /a ></p>
+  <p>ex)</p>
+  <p>Tip: 웹페이지가 프레임에 잠겨 있으면 프레임에서 target="_top" 벗어날 수 있습니다.</p>
+  <p>< a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!< /a ></p>
+  <hr>
+
+  <h2>HTML 링크 - 이미지를 링크로 사용</h2>
+  <p>이미지를 링크로 사용하는 것이 일반적 입니다.</p>
+  <p>ex)</p>
+  <pre>
+    < a href="default.asp">
+      < img src="smiley.gif" alt="HTML tutorial" style="width: 42px; height: 42px; border: 0;" >
+    < /a >
+  </pre>
+  <p>Tip: border: 0; IE9 및 이전 버전에서 이미지 주위에 테두리가 표시되지 않도록 추가되었습니다.(이미지가 링크인 경우)</p>
+  <hr>
+
+  <h2>제목 링크</h2>
+  
+</body>
+</html>
