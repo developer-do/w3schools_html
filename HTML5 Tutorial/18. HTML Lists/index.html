@@ -10,6 +10,27 @@
     #list_style tr { border: 1px solid #695846; }
     #list_style td,
     #list_style th { padding: 10px;}
+
+    .example {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+    .example li {
+      float: left;
+    }
+    .example li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    .example li a:hover {
+      background-color: #111111;
+    }
   </style>
 </head>
 <body>
@@ -78,5 +99,153 @@
     <li>Milk</li>
   </ul>
   <hr>
+
+  <h2>순서가 지정된 HTML 목록</h2>
+  <p>순서가 지정된 목록은 < ol > 태그로 시작합니다. 각 목록 항목은 < li >태그로 시작합니다.</p>
+  <p>목록 항목에는 기본적으로 숫자가 표시됩니다.</p>
+  <hr>
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+  <h2>정렬된 HTML 목록 - 유형 속성</h2>
+  <p>태그의 type 속성은 < ol > 목록 항목 마커의 유형을 정의합니다.</p>
+  <hr>
+  <table id="list_style">
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th>type="1"</th>
+      <td>The list items will be numbered with numbers (default)</td>
+    </tr>
+    <tr>
+      <th>type="A"</th>
+      <td>The list items will be numbered with uppercase letters</td>
+    </tr>
+    <tr>
+      <th>type="a"</th>
+      <td>	The list items will be numbered with lowercase letters</td>
+    </tr>
+    <tr>
+      <th>type="I"</th>
+      <td>The list items will be numbered with uppercase roman numbers</td>
+    </tr>
+    <tr>
+      <th>type="i"</th>
+      <td>The list items will be numbered with lowercase roman numbers</td>
+    </tr>
+  </table>
+  <hr>
+
+  <p>ex) 번호</p>
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+  <p>ex) 대문자</p>
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+  <p>ex) 소문자</p>
+  <ol type="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+  <p>ex) 대문자 로마 숫자</p>
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+  <p>ex) 소문자 로마 숫자</p>
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+
+  <h2>HTML 설명 목록</h2>
+  <p>HTML은 설명 목록도 지원합니다.</p>
+  <p>설명 목록은 각 용어에 대한 설명과 함께 용어 목록입니다.</p>
+  <p>< dl > 태그는 상기 설명 목록을 정의 < dt > 태그 용어(이름)를 정의하고, < dd >태그는 각각의 용어 설명</p>
+  <hr>
+  <p>ex)</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>-black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  <hr>
+
+  <h2>중첩 된 HTML 목록</h2>
+  <p>목록을 중첩 할 수 있습니다. (목록 내부에 나열)</p>
+  <hr>
+  <p>ex)</p>
+  <ul>
+    <li>Coffee</li>
+    <li>
+      Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+  <p>Tip: 목록 항목에는 새 목록과 이미지 및 링크 같은 기타 HTML 요소가 포함 될 수 있습니다.</p>
+  <hr>
+  
+  <h2>제어 목록 계산</h2>
+  <p>기본적으로 순서가 지정된 목록의 수는 1부터 시작됩니다. 지정한 수에서 계산을 시작하려면 다음 start 특성을 사용할 수 있습니다.</p>
+  <hr>
+  <p>ex)</p>
+  <ol start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  <hr>
+
+  <h2>CSS가 있는 가로 목록</h2>
+  <p>HTML 목록은 CSS를 사용하여 다양한 방식으로 스타일을 지정할 수 있습니다.</p>
+  <p>한 가지 일반적인 방법은 목록을 가로 방향으로 스타일을 지정하여 탐색 메뉴를 만드는 것입니다.</p>
+  <hr>
+  <p>ex)</p>
+  <ul class="example">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <hr>
+
+  <h1>단원 요약</h1>
+  <ol start="0">
+    <li>정렬되지 않은 목록을 정의 하려면 HTML 에 < ul >태그를 사용하십시오.</li>
+    <li>CSS list-style-type 속성을 사용하여 목록 항목 마커를 정의하십시오.</li>
+    <li>HTML < ol > 요소를 사용하여 정렬된 목록을 정의하십시오.</li>
+    <li>번호 매기기 유형을 정의하려면 HTML 의 type 속성을 사용하십시오.</li>
+    <li>HTML < li > 요소를 사용하여 목록 항목 정의</li>
+    <li>HTML < dl > 요소를 사용하여 설명 목록 정의</li>
+    <li>HTML < dt > 요소를 사용하여 설명 용어 정의</li>
+    <li>HTML < dd > 요소를 사용하여 설명 목록에 용어를 설명합니다.</li>
+    <li>목록은 목록 내부에 중첩 될 수 있습니다.</li>
+    <li>목록 항목에는 다른 HTML 요소가 포함 될 수 있습니다.</li>
+    <li>CSS 속성 float:left 하거나 display: inline 을 사용하여 가로로 목록을 배치 하십시오.</li>
+  </ol>
 </body>
 </html>
