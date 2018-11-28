@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #list_style { border: 1px solid #695846; border-collapse: collapse;}
+    #list_style tr { border: 1px solid #695846; }
+    #list_style td,
+    #list_style th { padding: 10px;}
+  </style>
+</head>
+<body>
+  <h1>HTML Lists</h1>
+
+  <h2>정렬되지 않은 HTML 목록</h2>
+  <p>정렬되지 않은 목록은  < ul > 태그로 시작합니다. 각 목록 항목은 < li > 태그로 시작합니다.</p>
+  <p>목록 항목은 기본적으로 글 머리 기호 (작은 검은 색 원)로 표시됩니다.</p>
+  <hr>
+  <p>ex)</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <hr>
+
+  <h2>정렬되지 않은 HTML 목록 - 목록 항목 마커 선택</h2>
+  <p>CSS list-style-type 속성은 목록 항목 마커의 스타일을 정의하는 데 사용 됩니다.</p>
+  <table id="list_style">
+    <tr>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <th>disc</th>
+      <td>Sets the list item marker to a bullet (default)</td>
+    </tr>
+    <tr>
+      <th>circle</th>
+      <td>Sets the list item marker to a circle</td>
+    </tr>
+    <tr>
+      <th>square</th>
+      <td>Sets the list item marker to a aquare</td>
+    </tr>
+    <tr>
+      <th>none</th>
+      <td>The list items will not be marked</td>
+    </tr>
+  </table>
+
+  <hr>
+  <p>ex) disc</p>
+  <ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <hr>
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <hr>
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <hr>
+  <ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <hr>
+</body>
+</html>
