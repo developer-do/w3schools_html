@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    tr, td , th {
+      border:1px solid #695846;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML 블록 및 인라인 요소</h1>
+
+  <hr>
+  <p>모든 HTML 요소는 요소 유형에 따라 기본 표시 값을 가집니다. 대부분의 요소에 대한 기본 표시 값은 블록 또는 인라인 입니다.</p>
+  <hr>
+
+  <h2>Block-level Elements</h2>
+  <p>display의 default가 block 인 elements 들을 말함.</p>
+  <p>블록 수준 요소는 항상 새줄에서 시작하여 사용할 수 있는 전체 너비를 사용합니다.(가능한 왼쪽 및 오른 쪽으로 뻗어 있슴)</p>
+  <div style="border: 2px solid green; padding: 4px;">
+    < div > element는 Bloxk-level Elements입니다.
+  </div>
+
+  <hr>
+  <div>Hello</div>
+  <div>World</div>
+
+  <p>HTML의 Block-level Elements</p>
+  <table>
+    <tr>
+      <td><b><</b>address<b>></b></td>
+      <td><b><</b>article<b>></b></td>
+      <td><b><</b>aside<b>></b></td>
+      <td><b><</b>blockquote<b>></b></td>
+      <td><b><</b>canvas<b>></b></td>
+      <td><b><</b>dd<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>div<b>></b></td>
+      <td><b><</b>dl<b>></b></td>
+      <td><b><</b>dt<b>></b></td>
+      <td><b><</b>fieldset<b>></b></td>
+      <td><b><</b>figcaption<b>></b></td>
+      <td><b><</b>figure<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>footer<b>></b></td>
+      <td><b><</b>form<b>></b></td>
+      <td><b><</b>h1<b>></b>~<b><</b>h6<b>></b></td>
+      <td><b><</b>header<b>></b></td>
+      <td><b><</b>hr<b>></b></td>
+      <td><b><</b>li<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>main<b>></b></td>
+      <td><b><</b>nav<b>></b></td>
+      <td><b><</b>noscript<b>></b></td>
+      <td><b><</b>ol<b>></b></td>
+      <td><b><</b>output<b>></b></td>
+      <td><b><</b>p<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>pre<b>></b></td>
+      <td><b><</b>section<b>></b></td>
+      <td><b><</b>table<b>></b></td>
+      <td><b><</b>tfoot<b>></b></td>
+      <td><b><</b>ul<b>></b></td>
+      <td><b><</b>video<b>></b></td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>인라인 요소</h2>
+  <p>인라인 요소는 새 줄에서 시작하지 않고 필요한 만큼만 너비를 차지합니다.</p>
+  <p>이것은 단락 <span style="border: 1px solid green; padding: 5px;">안에</span> 있는 <span style="border: 1px solid green; padding:5px;">인라인 < span > 요소</span>입니다.</p>
+  <hr>
+  <p>ex)</p>
+  <span>Hello</span>
+  <span>World</span>
+  <hr>
+  <p>HTML 의 인라인 요소</p>
+  
+  <hr><table>
+    <tr>
+      <td><b><</b>a<b>></b></td>
+      <td><b><</b>abbr<b>></b></td>
+      <td><b><</b>acronym<b>></b></td>
+      <td><b><</b>b<b>></b></td>
+      <td><b><</b>bdo<b>></b></td>
+      <td><b><</b>big<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>br<b>></b></td>
+      <td><b><</b>button<b>></b></td>
+      <td><b><</b>cite<b>></b></td>
+      <td><b><</b>code<b>></b></td>
+      <td><b><</b>dfn<b>></b></td>
+      <td><b><</b>em<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>i<b>></b></td>
+      <td><b><</b>img<b>></b></td>
+      <td><b><</b>input<b>></b></td>
+      <td><b><</b>kbd<b>></b></td>
+      <td><b><</b>label<b>></b></td>
+      <td><b><</b>map<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>object<b>></b></td>
+      <td><b><</b>q<b>></b></td>
+      <td><b><</b>samp<b>></b></td>
+      <td><b><</b>script<b>></b></td>
+      <td><b><</b>select<b>></b></td>
+      <td><b><</b>small<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>span<b>></b></td>
+      <td><b><</b>strong<b>></b></td>
+      <td><b><</b>sub<b>></b></td>
+      <td><b><</b>sup<b>></b></td>
+      <td><b><</b>textarea<b>></b></td>
+      <td><b><</b>time<b>></b></td>
+    </tr>
+    <tr>
+      <td><b><</b>tt<b>></b></td>
+      <td><b><</b>var<b>></b></td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>< div >요소</h2>
+  <p>< div >요소는 종종 다른 HTML 요소의 컨테이너로 사용됩니다.</p>
+  <p>< div >요소에는 필수 속성이 없지만 스타일, 클래스 및 ID 는 공통적입니다.</p>
+  <p>CSS 와 함께 사용하면 < div > 요소를 사용하여 콘텐츠 블록을 스타일 지정할 수 있습니다.</p>
+  <hr>
+  <p>ex)</p>
+  <div style="background-color: black; color: white; padding:20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million ingabitants.</p>
+  </div>
+  <hr>
+
+  <h2>< span > 요소</h2>
+  <p>< span >요소는 종종 다른 HTML 요소의 컨테이너로 사용됩니다.</p>
+  <p>< span >요소에는 필수 속성이 없지만 스타일, 클래스 및 ID 는 공통적입니다.</p>
+  <p>CSS 와 함께 사용하면 < span > 요소를 사용하여 텍스트의 일부분을 스타일 지정할 수 있습니다.</p>
+  <hr>
+  <p>ex)</p>
+  <h1>My <span style="color:red">Important</span> Heading</h1>
+  <hr>
+</body>
+</html>
