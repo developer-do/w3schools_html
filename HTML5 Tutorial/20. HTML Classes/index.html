@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .cities {
+      background-color: black;
+      color: white;
+      margin: 20px;
+      padding: 20px;
+    }
+    span.note {
+      font-size: 120%;
+      color: red;
+    }
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    }
+    .main {
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML The class Attribute</h1>
+
+  <hr>
+
+  <h2>class 속성 사용하기</h2>
+  <p>HTML class 속성은 동일한 클래스 이름을 가진 요소에 대한 동일한 스타일을 정의하는데 사용됩니다.</p>
+  <p>따라서 동일한 class 속성을 가진 모든 HTML 요소는 동일한 형식 및 스타일을 갖습니다.</p>
+  <p>여기 < div > 에는 동일한 클래스 이름을 가리키는 세 가지 요소가 있습니다.</p>
+  <hr>
+  <p>ex)</p>
+  <div class="cities">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+  <div class="cities">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+  <div class="cities">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <hr>
+
+  <h2>인라인 요소에서 class 속성 사용</h2>
+  <p>class 인라인 요소에서 HTML 속성을 사용할 수도 있습니다.</p>
+  <hr>
+  <h1>My <span class="note">Important</span> Heading</h1>
+  <p>This is some <span class="note">important</span> text.</p>
+  <hr>
+  <p>Tip: class 속성은 모든 HTML 요소에서 사용할 수 있습니다.</p>
+  <p>Note: 클래스 이름은 대소 문자를 구분합니다!</p>
+  <hr>
+
+  <h2>특정 클래스가 있는 요소 선택</h2>
+  <p>CSS에서 특정 클래스가 있는 요소를 선택하려면 마침표(.) 문자 다음에 클래스 이름을 입력하십시오.</p>
+  <hr>
+  <p>ex)</p>
+  <p>CSS를 사용하여 클래스 이름이 "city"인 모든 요소의 스타일을 지정하십시오.</p>
+
+  <h2 class="city">London</h2>
+  <p>London is the capital of England.</p>
+
+  <h2 class="city">Paris</h2>
+  <p>Paris is the capital of France.</p>
+
+  <h2 class="city">Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  <hr>
+
+  <h2>여러 클래스</h2>
+  <p>HTML 요소는 클래스 이름을 두 개 이상 가질 수 있으며 각 클래스 이름은 공백으로 구분해야 합니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>클래스 이름이 "city"인 스타일 요소, 클래스 이름이 "main"인 요소 스타일</p>
+  <h2 class="city main">London</h2>
+  <h2 class="city">Paris</h2>
+  <h2 class="city">Tokyo</h2>
+  <p>위 예제에서 첫 번째 < h2 >요소는 "city"클래스와 "main"클래스에 속합니다.</p>
+  <hr>
+  
+  <h2>다른 태그는 같은 클래스를 공유 할 수 있습니다.</h2>
+  <p>< h2 > 및 < p >와 같은 다른 태그는 동일한 클래스 이름을 가질 수 있으므로 동일한 스타일을 공유합니다.</p>
+
+  <hr>
+  <p>ex)</p>
+  <h2 class="city">Paris</h2>
+  <p class="city">Paris is the capital of France</p>
+  
+  <hr>
+
+  <h2>Javascript의 class 속성 사용</h2>
+  <p>클래스 이름은 JavaScript가 지정된 클래스 이름을 가진 요소에 대한 특정 작업을 수행하는데 사용 될 수도 있습니다.</p>
+  <p>JavaScript는 다음 getElementsByClassName()메소드를 사용하여 지정된 클래스 이름을 가진 요소에 엑세스 할 수 있습니다.</p>
+
+  <hr>
+  <p>ex)</p>
+  <p>사용자가 버튼을 클릭하면 클래스 이름이 "city"인 모든 요소를 숨깁니다.</p>
+  <button id="but">숨기기버튼</button>
+  <script>
+    var but = document.getElementById("but");
+    but.addEventListener("click", myFunc);
+
+    function myFunc(){
+      var x = document.getElementsByClassName("city");
+      for(var i = 0; i < x.length; i++){
+        x[i].style.display = "none";
+      }
+    }
+  </script>
+  <hr>
+</body>
+</html>
