@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Page Title</title>
+</head>
+<body>
+  <h1>HTML Head</h1>
+  <hr>
+
+  <h2>HTML < head > 요소</h2>
+  <p>< head > 요소는 메타 데이터 (데이터에 대한 데이터)의 컨테이너이며 < html >태그와 < body >태그 사이에 배치됩니다.</p>
+  <p>HTML 메타 데이터는 HTML 문서에 대한 데이터 입니다. 메타 데이터가 표시되지 않습니다.</p>
+  <p>메타 데이터는 일반적으로 문서 제목, 문자 세트, 스타일, 링크, 스크립트 및 기타 메타 정보를 정의합니다.</p>
+  <p>다음 태그는 < title >, < /style >, < meta >, < link >, < /script > 및 < base > 메타 데이터를 설명합니다.</p>
+  <hr>
+
+  <h2>HTML < title > 요소</h2>
+  <p>< title > 요소는 문서의 제목을 정의하고, 문서 HTML / XHTML 문서가 필요합니다.</p>
+  <p>< title > 요소</p>
+  <ul>
+    <li>브라우저 탭에 제목을 정의합니다.</li>
+    <li>즐겨찾기에 추가 될 때 페이지의 제목을 제공합니다.</li>
+    <li>검색 엔진 결과에 페이지 제목을 표시합니다.</li>
+  </ul>
+  <p>간단한 HTML 문서</p>
+  <hr>
+  <pre>
+    < head >
+      < title >Page Title< /title >
+    < /head >
+  </pre>
+  <p>위와 같이 하게되면 title이 Page Title로 바뀌게 된다.</p>
+  <hr>
+
+  <h2>HTML < /style > 요소</h2>
+  <p>이 < /style >요소는 단일 HTML 페이지의 스타일 정보를 정의하는데 사용됩니다.</p>
+  <hr>
+  <pre>
+    < /style >
+      body { background-color: powderblue; }
+      h1 { color: red; }
+      p { color: blue; }
+    < /style >
+  </pre>
+  <hr>
+
+  <h2>HTML < link > 요소</h2>
+  <p>이 < link > 요소는 외부 스타일 시트에 연결하는 데 사용됩니다.</p>
+  <hr>
+  <p>ex)</p>
+  <pre>
+    < link rel="stylesheet" href="mystyle.css" >
+  </pre>
+  <hr>
+  
+  <h2>HTML < meta > 요소</h2>
+  <p>< meta > 요소는 페이지 설명, 키워드, 저자 및 기타 메타 데이터를 사용하는 문자 집합을 지정한느 데 사용됩니다.</p>
+  <p>메타 데이터는 브라우저 (내용 표시 방법), 검색 엔진 (키워드) 및 기타 웹 서비스에서 사용됩니다.</p>
+  <hr>
+  <p>사용 된 문자 세트를 정의하십시오.</p>
+  <pre>
+    < meta charset="UTF-8" >
+  </pre>
+  <hr>
+  <p>웹 페이지에 대한 설명을 정의하십시오.</p>
+  <pre>
+    < meta name="description" content ="Free Web tutorials" >
+  </pre>
+  <hr>
+  <p>검색 엔진에 대한 키워드 정의</p>
+  <pre>
+    < meta name="keywords" content="HTML , CSS , XML , JavaScript" >
+  </pre>
+  <hr>
+  <p>페이지 작성자를 정의하십시오.</p>
+  <pre>
+    < meta name="author" content="John Doe">
+  </pre>
+  <hr>
+  <p>30초 마다 문서 새로고침</p>
+  <pre>
+    < meta http-equiv="refresh" content="30" >
+  </pre>
+  <hr>
+
+  <h2>< meta > 태그의 예</h2>
+  <hr>
+  <pre>
+    < meta charset="UTF-8" >
+    < meta name="description" content="Free Web tutorials" >
+    < meta name="keywords" content="HTML, CSS, XML, JavaScript" >
+    < meta name="author" content="John Doe">
+  </pre>
+  <hr>
+
+
+  <h2>뷰포트 설정하기</h2>
+  <p>HTML5는 웹 디자이너가 < meta > 태그를 통해 뷰포트를 제어할 수 있게 하는 메소드를 도입했습니다.</p>
+  <p>뷰포트는 웹 페이지의 사용자가 볼 수 있는 영역입니다. 기기에 따라 다르며 휴대 전화에서는 컴퓨터 화면보다 작습니다.</p>
+  <p>모든 웹 페이지에 아래와 같은 < meta > 뷰포트 요소를 포함해야 합니다.</p>
+  <p>< meta name="viewport" content="width=device-width, initial-scale=1.0" ></p>
+  <p>< meta > viewport 요소는 페이지의 크기와 배율을 제어하는 방법에 대한 브라우저 지침을 제공합니다.</p>
+  <p>width = device-width 부분은 페이지의 너비를 장치의 화면 너비에 따라 설정합니다. (장치에 따라 다름)</p>
+  <p>initial-scale = 1.0 부분은 브라우저가 페이지를 처음 로드 할 때 초기 줌 레벨을 설정합니다.</p>
+  <p>다음은 뷰포트 메타 태그가 없는 웹페이지와 뷰포트 < meta > 태그가 있는 동일한 웹 페이지의 예입니다.</p>
+  <p>Tip: 휴대전화 또는 테블릿으로 이 페이지를 탐색하는 경우 아래의 두 링크를 클릭하여 차이점을 확인할 수 있습니다.</p>
+  <p><a href="https://www.w3schools.com/html/example_withoutviewport.htm">뷰포트 적용 안한 곳</a></p>
+  <p><a href="https://www.w3schools.com/html/example_withviewport.htm">뷰포트 적용 한 곳</a></p>
+
+  <hr>
+
+  <h2>HTML < /script > 요소</h2>
+  <p>< /script >요소는 클라이언트 측 자바 스크립트를 정의하는 데 사용된다.</p>
+  <p>이 자바스크립트는 id="demo"인 HTML 요소에 "Hello JavaScript!" 텍스트를 추가합니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p id="demo"></p>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    myFunction();
+  </script>
+  <hr>
+
+  <h2>HTML < base > 요소</h2>
+  <p>< base >요소는 페이지의 모든 상대 URL의 기본 URL과 베이스 대상을 지정합니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>< base href="https://www.w3schools.com/images/" target="_blank" ></p>
+  <p>위와 같이 지정해 놓으면 위의 경로를 기점으로 시작한다.</p>
+  <hr>
+
+  <h2>< html >, < head > 및 < body >를 생략 하시겠습니까?</h2>
+  <p>HTML5 표준에 따르면 < html >, < body > 및 < head >태그는 생략할 수 있습니다.</p>
+  <p>다음 코드는 HTML5로 유효성을 검사합니다.</p>
+  <hr>
+  <p>ex)</p>
+  <pre>
+    < !DOCTYPE html >
+    < title >Page Title< /title >
+
+    < h1 >This is a heading< /h1 >
+    < p >This is a paragraph< /p >
+  </pre>
+
+  <p>Note: W3Schools는 < html > 및 < body > 태그를 생략하지 않는것이 좋다고 생각합니다. 이러한 태그를 생략하면 DOM 또는 XML 소프트 웨어가 손상되고 이전 브라우저 (IE9) 에서 오류가 발생할 수 있습니다.</p>
+  <p>그러나 < head > 태그를 생략하는 것은 꽤 오랜 시간 동안 일반적인 관행이었습니다.</p>
+  <hr>
+</body>
+</html>
