@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #head_table {
+      border: 2px solid peru;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    #head_table tr,
+    #head_table th,
+    #head_table td {
+      border: 2px solid peru;
+      padding: 5px;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML 파일 경로</h1>
+  <table id="head_table">
+    <tr>
+      <th>Path</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>< img src="picture.jpg" ></td>
+      <td>picture.jpg는 현재 페이지와 같은 폴더에 있습니다.</td>
+    </tr>
+    <tr>
+      <td>< img src="images/picture.jpg" ></td>
+      <td>picture.jpg는 현재 폴더의 images 폴더에 있습니다.</td>
+    </tr>
+    <tr>
+      <td>< img src="/images/picture.jpg" ></td>
+      <td>picture.jpg는 현재 웹의 루트에 있는 images폴더에 있습니다.</td>
+    </tr>
+    <tr>
+      <td>< img src="../picture.jpg" ></td>
+      <td>picture.jpg는 현재 폴더에서 한 수준 위의 폴더에 있습니다.</td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2>HTML 파일 경로</h2>
+  <p>파일 경로는 웹 사이트의 폴더 구조에 있는 파일의 위치를 설명합니다.</p>
+  <p>파일 경로는 다음과 같은 외부 파일에 연결할 때 사용됩니다.</p>
+  <ul>
+    <li>웹 페이지</li>
+    <li>이미지</li>
+    <li>스타일 시트</li>
+    <li>자바 스크립트</li>
+  </ul>
+  <hr>
+
+  <h2>절대 파일 경로</h2>
+  <p>절대 파일 경로는 인터넷 파일의 전체 URL 입니다.</p>
+  <hr>
+  <p>ex)</p>
+  <p>< img src="https://www.w3schools.com/images/picture.jpg" alt="" >는 아래와 같다.</p>
+  <img src="https://www.w3schools.com/images/picture.jpg" alt="">
+  <hr>
+
+  <h2>상대 파일 경로</h2>
+  <p>상대 파일 경로는 현재 페이지를 기준으로 파일을 가리킵니다.</p>
+  <hr>
+  <p>이 예제에서 파일 경로는 현재 웹의 루트에 있는 images 폴더의 파일을 가리킵니다.</p>
+  <p>ex)</p>
+  <p>< img src="/images/picture.jpg" alt="Mountain" ></p>
+  <p><img src="/images/picture.jpg" alt="Mountain"></p>
+  <hr>
+  <p>이 예제에서 파일 경로는 현재 폴더에 있는 images 폴더의 파일을 가리킵니다.</p>
+  <p>ex)</p>
+  <p>< img src="images/picture.jpg" alt="Mountain" >는 아래와 같다.</p>
+  <p><img src="images/picture.jpg" alt="Mountain"></p>
+  <hr>
+  <p>이 예제에서 파일 경로는 현재 폴더의 한 수준 위의 폴더에 있는 images 폴더의 파일을 가리킵니다.</p>
+  <p>ex)</p>
+  <p>< img src="../24. images/picture.jpg" alt="Mountain" >는 아래와 같다.</p>
+  <p><img src="../24. images/picture.jpg" alt="Mountain"></p>
+  <hr>
+
+  <h2>Best Practice(베스트 프랙티스)</h2>
+  <p>가능한 경우 상대 파일 경로를 사용하는 것이 가장 좋습니다.</p>
+  <p>상대 파일 경로를 사용할 때 웹 페이지는 현재 기본 URL에 바인딩 되지 않습니다. 모든 링크는 자신의 컴퓨터 (로컬 호스트) 뿐만 아니라 현재 공개 도메인 및 향후 공용 도메인에서도 작동합니다.</p>
+</body>
+</html>
