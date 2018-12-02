@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    #div_box {
+      overflow:hidden;
+    }
+    #div_box > div {
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML 레이아웃</h1>
+  <hr>
+
+  <h2>HTML 레이아웃 요소</h2>
+  <p>웹 사이트는 종종 잡지나 신문과 같이 여러 열에 내용을 표시합니다.</p>
+  <p>HTML5는 웹 페이지의 다른 부분을 정의하는 새로운 의미 요소를 제공합니다.</p>
+
+  <div id="div_box">
+    <div><img src="img_sem_elements.gif" alt="elements"></div>
+    <div>
+      <ul>
+        <li>< header > - 문서 또는 섹션의 머리글을 정의합니다.</li>
+        <li>< nav > - 탐색 링크를 위한 컨테이너를 정의합니다.</li>
+        <li>< section > - 문서의 섹션을 정의합니다.</li>
+        <li>< article > - 독립적인 독립기사 정의합니다.</li>
+        <li>< aside > - 사이드 바처럼 콘텐츠를 제외하고 콘텐츠를 정의합니다.</li>
+        <li>< footer > - 문서 또는 섹션에 대한 바닥글을 정의합니다.</li>
+        <li>< details > - 추가 세부 정보 정의</li>
+        <li>< summary > - < details > 요소의 제목을 정의합니다.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+  <h2>HTML 레이아웃 기법</h2>
+  <p>다중 열 레이아웃을 반드는데는 다섯가지 방법이 있습니다. 각 방법마다 장단점이 있습니다.</p>
+  <ul>
+    <li>HTML table (권장하지 않음)</li>
+    <li>CSS float 속성</li>
+    <li>CSS flexbox</li>
+    <li>CSS framework</li>
+    <li>CSS grid</li>
+  </ul>
+
+  <hr>
+
+  <h2>어느것을 선택할 것인가?</h2>
+  <h3>HTML Tables</h3>
+  <p>< table > 요소는 레이아웃 도구로 설계되지 않았습니다! < table > 요소의 목적은 표 형식의 데이터를 표시하는 것입니다.</p>
+  <p>따라서 페이지 레이아웃에 테이블을 사용하지 마십시오!</p>
+  <p>그들은 당신의 코드에 혼란을 가져올 것입니다. 몇달 후에 사이트를 다시 설계하는 것이 얼마나 힘든지 상상해 보십시오.</p>
+  <p>Tip: 페이지 레이아웃에 테이블을 사용하지 마십시오.</p>
+
+  <hr>
+
+  <h3>CSS Framework</h3>
+  <p>레이아웃을 빠르게 만들려면 W3.CSS 또는 부트스트랩과 같은 프레임 워크를 공부하여 사용하십시오.</p>
+
+  <hr>
+
+  <h3>CSS Floats</h3>
+  <p>CSS 플로트 속성을 사용하여 전체 웹 레이아웃을 수행하는 것이 일반적입니다.</p>
+  <p>플로트는 배우기 쉽습니다.</p>
+  <p>플로트 및 투명한 속성이 작동하는 방식을 기억하면 됩니다.</p>
+  <p>단점 : 플로팅 요소는 문서 흐름에 묶여있어 유연성에 해를 미칠 수 있습니다. CSS Float 및 Clear 장에서 float에 대해 자세히 알아봅시다.</p>
+  <hr>
+  <h4>float ex)</h4>
+  <div id="floating">
+
+    <header>
+      <h2>Cities</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </div>
+  <hr>
+
+  <h2>CSS Flexbox</h2>
+  <p>Flexbox는 CSS3의 새로운 레이아웃 모드입니다.</p>
+  <p>flexbox를 사용하면 페이지 레이아웃이 다른 화면 크기와 다른 디스플레이 장치를 수용해야 할 때 요소가 예상대로 작동합니다.</p>
+  <p>단점: IE10 이하에서는 작동하지 않습니다.</p>
+  
+
+  <hr>
+
+  <div id="flexbox">
+    <header>
+      <h2>Cities</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      
+      <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+
+  </div>
+
+  <hr>
+
+
+  <h4>CSS Grid View</h4>
+  <p>CSS 그리드 레이아웃 모듈은 행과 열이 있는 그리드 기반 레이아웃 시스템을 제공하므로 부유와 위치 지정을 사용하지 않고 웹페이지를 보다 쉽게 디자인 할 수 있습니다.</p>
+  <p>단점: IE나 Edge 15 이하에서는 작동하지 않습니다.</p>
+  
+</body>
+</html>
