@@ -25,3 +25,11 @@
 
 #wrap .menu {  float: left; width: 20%; text-align: center;}
 #wrap .menu a { background-color: #e5e5e5; padding: 8px; margin-top: 7px; display: block; width: 100%; color: black;}
+#wrap .main { float: left; width: 60%; padding: 0 20px; }
+#wrap .right { background-color: #e5e5e5; float: left; width: 20%; padding: 15px; margin-top: 7px; text-align: center;}
+
+@media only screen and (max-width: 620px){
+  #wrap .menu, #wrap .main, #wrap .right {
+    width: 100%;
+  }
+}
