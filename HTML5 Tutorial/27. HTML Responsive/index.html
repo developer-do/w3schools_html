@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>HTML Responsive Web Design (HTML 반응형 웹 디자인)</h1>
+
+  <hr>
+
+  <h2>반응형 웹 디자인이란 무엇입니까?</h2>
+  <p>반응형 웹 디자인은 HTML과 CSS를 사용하여 웹 사이트의 크기를 자동으로 조정, 숨기기, 축소 또는 확대하여 모든 장치(데스크탑, 태블릿, 휴대전화)에서 잘 보이도록 합니다.</p>
+  <p>Tip: 웹 페이지는 모든 장치에서 잘 보일 것 입니다.</p>
+  <hr>
+
+  <h2>뷰 포트 설정하기</h2>
+  <p>반응형 웹 페이지를 만들 때 모든 웹 페이지에 다음 < meta > 요소를 추가하십시오.</p>
+  <hr>
+  <p>ex)</p>
+  <p>< meta name="viewport" content="width=device-width, initial-scale=1.0" ></p>
+  <p>이렇게 하면 페이지의 뷰포트가 설정되어 브라우저에서 페이지의 크기 및 배율을 제어하는 방법에 대한 지침을 제공합니다.</p>
+  <p>다음은 뷰포트 메타 태그가 없는 웹 페이지와 뷰 포트 메타 태그가 있는 동일한 웹페이지의 예 입니다.</p>
+  <a href="https://www.w3schools.com/html/html_responsive.asp">이 곳을 클릭해서 확인하세요.</a>
+  <p>Note: 휴대전화 또는 테블릿에서 이 페이지를 탐색하는 경우 위의 두 링크를 클릭하여 차이를 확인할 수 있습니다.</p>
+  <hr>
+
+  <h2>반응형 이미지</h2>
+  <p>반응형 이미지는 모든 브라우저 크기에 맞게 확장되는 이미지 입니다.</p>
+  <h3>width 속성 사용</h3>
+  <hr>
+  <p>CSS width 속성을 100%로 설정하면 이미지가 반응하고 확대 및 축소됩니다.</p>
+  <p>ex)</p>
+  <p>< img src="img_girl.jpg" style="width: 100%;" >는 아래와 같다.</p>
+  <img src="img_girl.jpg" style="width: 100%;">
+  <p>위의 예에서 이미지의 크기를 원래 크기보다 크게 조정할 수 있습니다. 더 나은 해결책은 대부분의 경우 max-width속성을 대신 사용하는 것입니다.</p>
+  <hr>
+
+  <h3>max-width 속성 사용</h3>
+  
+  <hr>
+  <p>max-width 속성을 100%로 설정하면 필요한 경우 영상이 축소되지만 원래 크기보다 크게 확장되지는 않습니다.</p>
+  <p>< img src="img_girl.jpg" style="max-width: 100%; height: auto;">는 아래와 같다.</p>
+  <img src="img_girl.jpg" style="max-width: 100%; height: auto;">
+  <hr>
+
+  <h3>브라우저 너비에 따라 다른 이미지 표시</h3>
+  <p>HTML < picture >요소를 사용하면 브라우저 창 크기에 따라 서로다른 이미지를 정의할 수 있습니다.</p>
+  <p>브라우저 창 크기를 조정하여 너비에 따라 이미지가 어떻게 달라지는지 확인하십시오.</p>
+  <picture>
+    <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+    <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+    <source srcset="flowers.jpg">
+    <img src="img_smallflower.jpg" alt="Flowers">
+  </picture>
+
+  <pre>
+    < picture >
+      < source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+      < source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+      < source srcset="flowers.jpg">
+      < img src="img_smallflower.jpg" alt="Flowers">
+    < /picture >
+    는 위의 사진을 나타낸 것이다.
+  </pre>
+  <hr>
+
+  <h3>반응형 텍스트 크기</h3>
+  <p>텍스트 크기는 "뷰포트 너비"를 의미하는 "vw" 단위로 설정할 수 있습니다.</p>
+  <p>그렇게 하면 텍스트 크기가 브라우저 창의 크기를 따릅니다.</p>
+  <hr>
+  <p>ex)</p>
+  <h1 style="font-size: 10vw;">Hello World</h1>
+  <p style="font-size: 5vw;">브라우저 창 크기를 조정하여 텍스트 크기가 어떻게 변하는 지 확인하십시오.</p>
+  <p>뷰포트는 브라우저 창 크기입니다. 1vw = 뷰포트 너비의 1%. 뷰포트 너비가 50cm이면 1vw는 0.5cm입니다.</p>
+  <hr>
+
+  <h3>media query ( 미디어 쿼리 )</h3>
+  <p>텍스트 및 이미지의 크기를 조정하는 것 외에도 반응형 웹페이지에서 미디어 쿼리를 사용하는 것이 일반적입니다.</p>
+  <p>미디어 쿼리를 사용하면 브라우저 크기에 따라 완전히 다른 스타일을 정의할 수 있습니다.</p>
+  <p>ex) 브라우저 창 크기를 조정하면 아래의 3개의 div 요소가 큰 화면에 가로로 표시되고 작은 화면에 세로로 표시됩니다.</p>
+
+  <hr>
+  <div class="wrap">
+    <div class="left">left menu</div>
+    <div class="main">main content</div>
+    <div class="right">right content</div>
+  </div>
+
+  <pre>
+    .wrap {overflow: hidden;}
+    .left { background-color: #2196f3;}
+    .right { background-color: #4caf50;}
+    .main { width: 60%; float: left; background-color: #f1f1f1; }
+    .left, .right {
+      float: left;
+      width: 20%;
+      color: #fff;
+    }
+
+
+    .left, .right, .main {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      .left, .main, .right {
+        width: 100%;
+      }
+    }
+  </pre>
+  <hr>
+  
+  <h2>반응형 웹페이지 - 전체 예제</h2>
+  <p>응답성이 뛰어난 웹 페이지는 대형 데스크탑 화면과 소형 휴대전화에서 잘 보입니다.</p>
+  
+  <div id="wrap">
+    <div style="background-color: #e5e5e5; padding: 15px; text-align:center;">
+      <h1>Hello World</h1>
+    </div>
+
+    <div style="overflow: auto;">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+
+      <div class="main">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ea corporis et, quos ab ratione vero adipisci tempora natus deserunt illo voluptates exercitationem sequi vel vitae itaque excepturi tempore aliquam!</p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div style="background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+        © copyright w3schools.com
+    </div>
+  </div>
+</body>
+</html>

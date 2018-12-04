@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+.wrap {overflow: hidden;}
+.wrap .left { background-color: #2196f3;}
+.wrap .right { background-color: #4caf50;}
+.wrap .main { width: 60%; float: left; background-color: #f1f1f1; }
+.wrap .left, .wrap .right {
+  float: left;
+  width: 20%;
+  color: #fff;
+}
+
+
+.wrap .left,.wrap .right,.wrap .main {
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .wrap .left,.wrap .main,.wrap .right {
+    width: 100%;
+  }
+}
+
+#wrap .menu {  float: left; width: 20%; text-align: center;}
+#wrap .menu a { background-color: #e5e5e5; padding: 8px; margin-top: 7px; display: block; width: 100%; color: black;}
