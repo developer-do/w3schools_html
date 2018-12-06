@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .back_y { background:#ffffcc; border-left: 6px solid #ffeb3b; padding: 10px;}
+  </style>
+</head>
+<body>
+  <h1>HTML Uniform Resource Locators</h1>
+  <hr>
+
+  <p>URL은 웹 주소의 또 다른 언어입니다.</p>
+  <p>URL은 단어 (w3schools.com) 또는 인터넷 프로토콜 (IP) 주소 (192.68.20.50)로 구성될 수 있습니다.</p>
+  <p>대부분의 사람들은 서핑을 할 때 (w3schools.com)이런식의 단어를 입력합니다. 이름이 IP인 숫자보다 기억하기 쉽기 때문입니다.</p>
+  <hr>
+
+  <h2>URL - URL(Uniform Resource Locator)</h2>
+  <p>웹 프라우저는 URL을 사용하여 웹 서버의 페이지를 요청합니다.</p>
+  <p>URL(Uniform Resource Locator)은 웹상의 문서 (또는 다른 데이터)를 주소 지정하는데 사용됩니다.</p>
+  <p>https://www.w3schools.com/html/default.asp 와 같은 웹 주소는 다음 구문 규칙을 따릅니다.</p>
+  <p class="back_y">scheme://prefix.domain:port/path/filename</p>
+  <p>설명</p>
+  <ul>
+    <li>scheme - 인터넷 서비스 유형을 정의합니다. (가장 일반적인 것은 http 또는 https 입니다)</li>
+    <li>prefix - 도메인 접두사를 정의합니다. (http의 기본값은 www입니다)</li>
+    <li>doamin - 인터넷 도메인 이름을 정의합니다. (예: w3schools.com)</li>
+    <li>port - 호스트에서 포트번호를 정의합니다. (http의 기본값은 80 입니다)</li>
+    <li>path - 서버의 경로를 정의합니다. (생략된 경우: 사이트의 루트 디렉토리)</li>
+    <li>filename - 문서 또는 리소스의 이름을 정의합니다.</li>
+  </ul>
+  <hr>
+
+  <h2>공통 URL 체계</h2>
+  <p>아래 표에는 몇가지 공통적인 구성표가 나와있습니다.</p>
+  <table>
+    <tbody>
+      <tr>
+        <th>Scheme</th>
+        <th>Short for</th>
+        <th>Used for</th>
+      </tr>
+      <tr>
+        <td>http</td>
+        <td>HyperText Transfer Protocol</td>
+        <td>common web pages. Not encrypted</td>
+      </tr>
+      <tr>
+        <td>https</td>
+        <td>Secure hyperText Transfer Protocol</td>
+        <td>Secure web pages. Encrypted</td>
+      </tr>
+      <tr>
+        <td>ftp</td>
+        <td>File Transfer Protocol</td>
+        <td>Downloading or uploading files</td>
+      </tr>
+      <tr>
+        <td>file</td>
+        <td></td>
+        <td>A file on your computer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <h2>URL 인코딩</h2>
+  <p>URL은 ASCII 문자 집합을 사용하여 인터넷을 통해서만 전송할 수 있습니다.</p>
+  <p>URL에 ASCII 세트 외부의 문자가 포함되어 있으면 URL을 변환해야 합니다.</p>
+  <p>URL 인코딩은 비 ASCII 문자를 인터넷을 통해 전송할 수 있는 형식으로 변환합니다.</p>
+  <p>URL 인코딩은 비 ASCII 문자를 "%"다음에 16진수로 대체합니다.</p>
+  <p>URL에는 공백이 포함될 수 없습니다. URL 인코딩은 일반적으로 공백을 더하기(+) 기호 또는 % 20으로 바꿉니다.</p>
+  <p>직접 해보기는 아래 링크를 통해서 확인할 수 있습니다.</p>
+  <p class="back_y"><a href="https://www.w3schools.com/html/html_urlencode.asp">여기 링크를 클릭하세요.</a></p>
+  <p>"제출"을 클릭하면 브라우저는 그것이 서버로 보내지기 전에 URL을 인코딩 합니다.</p>
+  <p>서버의 페이지에 수신된 입력이 표시 됩니다.</p>
+  <p>다른 입력을 시도하여 [다시 제출]을 클릭하세요.</p>
+  <hr>
+
+  <h2>ASCII 인코딩 예제</h2>
+  <p>귀하의 브라우저는 귀하의 페이지에서 사용된 문자 세트에 따라 입력을 인코딩합니다.</p>
+  <p>HTML5의 기본문자 집한은 UTF-8입니다.</p>
+  <p class="back_y"><a href="https://www.w3schools.com/html/html_urlencode.asp">더 많은 인코딩 정보를 보고싶으시면 이 글을 클릭해주세요.</a></p>
+</body>
+</html>
